@@ -3,8 +3,8 @@ import 'dart:math';
 import 'package:flutter/material.dart';
 
 class ResultOverlay extends StatefulWidget {
-  VoidCallback _onTap;
-  bool _isCorrect;
+  final VoidCallback _onTap;
+  final bool _isCorrect;
   ResultOverlay(this._isCorrect,this._onTap);
   @override
   State<StatefulWidget> createState() => new ResultOverlayState();

@@ -9,7 +9,10 @@ class MyHomepage extends StatelessWidget {
     return new Material(
       color: Colors.blue,
       child: new InkWell(
-        onTap: () => {Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new QuizPage())):context},
+        onTap: () => {
+          Navigator.of(context).push(new MaterialPageRoute(builder: (BuildContext context) => new QuizPage())):context,
+          Navigator.of(context).pop():context
+},
         child: new Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
